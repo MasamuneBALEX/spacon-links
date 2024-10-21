@@ -1,3 +1,4 @@
+// min-height media для большой высоты экрана
 @media (min-height: 1100px) {
     .main {
         &_base {
@@ -39,8 +40,35 @@
     }
 }
 
+// Wrapper затемнение main медиа запросы
+
+@media (max-width: 1600px) {
+    .main {
+        &_bg-wrapper {
+            border-left: 16vw solid $secondary-color;
+            border-right: 16vw solid $secondary-color;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .main {
+        &_bg-wrapper {
+            border-left: 12vw solid $secondary-color;
+            border-right: 12vw solid $secondary-color;
+        }
+    }
+}
+
+// max-width media для меньших экранов
 @media (max-width: 992px) {
     .main {
+
+        &_bg-wrapper {
+            border-left: none;
+            border-right: none;
+        }
+
         &_base {
             padding-top: 30px;
         }
@@ -57,9 +85,15 @@
 @media (max-width: 576px) {
 
     .main {
+        background: url(../img/bg-mobile.gif) center center / cover no-repeat;
+
         &_logo {
             width: 50vw;
             height: 50vw;
+
+            &-effect {
+                background: url(../img/glitch2.gif) center center / cover no-repeat;
+            }
         }
 
         &_base {
@@ -67,6 +101,10 @@
             min-height: 100vh;
             border-left: none;
             border-right: none;
+
+            &-effect {
+                background: none;
+            }
         }
 
         &_links {
