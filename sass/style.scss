@@ -1,14 +1,17 @@
 @import '_variables';
 @import '_main';
 
+
 * {
     font-family: "SenFont", "Segoe UI", sans-serif;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto
+    margin: 0 auto;
 }
+
+@import '_media';
 
 span {
     font-family: "SVGIcons";

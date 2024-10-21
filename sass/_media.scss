@@ -1,0 +1,84 @@
+@media (max-height: 840px) {
+    .main {
+        &_base {
+            height: auto;
+            min-height: 100vh;
+        }
+
+        &_music-platforms {
+            width: 100%;
+            min-height: 60vh;
+            padding-bottom: 25vw;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        &_base {
+            padding-top: 30px;
+        }
+
+        &_music-platforms {
+            width: 100%;
+            min-height: 60vh;
+            padding-bottom: 25vw;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .main {
+        &_logo {
+            width: 50vw;
+            height: 50vw;
+        }
+
+        &_base {
+            height: auto;
+            min-height: 100vh;
+            border-left: none;
+            border-right: none;
+        }
+
+        &_links {
+            width: 100%;
+        }
+
+        &_link {
+            width: 70%;
+            font-size: 8vw;
+        }
+
+        &_music-platforms {
+            width: 100%;
+            min-height: 60vh;
+            padding-bottom: 25vw;
+            justify-content: space-evenly;
+
+            .main_link {
+                width: 80%;
+            }
+        }
+
+        &_other-links {
+            column-gap: 12vw;
+            height: 14vw;
+
+            a {
+                font-size: 9vw;
+                width: 12%;
+                height: 12vw;
+                // height: calc(80% /);
+
+                .icon-deezer:before {
+                    font-size: 7.5vw;
+
+                }
+            }
+        }
+    }
+}
