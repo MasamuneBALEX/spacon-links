@@ -87,6 +87,10 @@
     .main {
         background: url(../img/bg-mobile.gif) center center / cover no-repeat;
 
+        &_bg-wrapper {
+            display: none;
+        }
+
         &_logo {
             width: 50vw;
             height: 50vw;
@@ -114,6 +118,15 @@
         &_link {
             width: 70%;
             font-size: 8vw;
+            background-color: rgb(220, 0, 0);
+            color: $primary-color;
+
+            &:hover {
+                background-color: rgb(220, 0, 0);
+                color: $primary-color;
+                font-weight: 700;
+                cursor: default;
+            }
         }
 
         &_music-platforms {
@@ -124,6 +137,14 @@
 
             .main_link {
                 width: 80%;
+                font-weight: 400;
+
+                &:hover {
+                    background-color: $thirdly-color;
+                    color: $primary-color;
+                    font-size: 8vw;
+                    cursor: default;
+                }
             }
         }
 
@@ -135,7 +156,13 @@
                 font-size: 9vw;
                 width: 12%;
                 height: 12vw;
+
                 // height: calc(80% /);
+                &:hover {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    cursor: default;
+                }
 
                 .icon-deezer:before {
                     font-size: 7.5vw;
